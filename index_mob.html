@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SpinWheel</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <div class="header"> </div>
+    <img class="topleftimg" src="Images/Siaf.png" alt="logo">
+    <img class="toprightimg" src="Images/tata.png" alt="logo">
+    <div class="bg">
+    </div>
+    <img class="topcentermg" src="Images/bfflogo.png" alt="logo">
+   
+    <div class ="title1"> This Valentines Day, </div>
+    <div class="title"> Let's Showcase love through action</div>
+    <div class="title2"> <b>SPIN</b> the wheel and take the sustainable <b>PLEDGE INSPIRE</b> change that makes a big impact</div>
+   
+   <!-- <div class="boxTextContainer"> <b>SPIN PLEDGE AND INSPIRE! BECAUSE THE BEST WAY TO SHOW LOVE IS THROUGH ACTION</div>-->
+    
+    </div>
+
+    <div class="container">
+        <div class="Notch"></div>
+        <div class="spinBtn">Spin</div>
+       
+       
+            <div class="Wheel">
+                <div class="Number" style="--i:1;--clr:#ea90aa;" > <img src = Images/Icons-08.png> <span  style="color: black;">Recycle like<br>a plant hero</span></div>
+                <div class="Number" style="--i:2;--clr:#ee498e;"> <img src = Images/cycle.png> <span >Ride the <br> Eco Express</div>
+                <div class="Number" style="--i:3;--clr:#eed9de;"> <img src = Images/Icons-04.png> <span style="color: black;" >Upcycle Magic! </span></div>
+                <div class="Number" style="--i:4;--clr:#ea90aa;"> <img src = Images/book.png> <span style="color: black;">Book Swap Party!</span></div>
+                <div class="Number" style="--i:5;--clr:#ee498e;"> <img src = Images/Icons-02.png><span > Lights out, Fun In</span></div>
+                <div class="Number" style="--i:6;--clr:#eed9de;"> <img src = Images/noplastic.png><span  style="margin-right: 20%; color: black;"> No More<br> Plastic Bags</span></div>
+               
+                <div class="Number" style="--i:7;--clr:#ea90aa;"> <img src = Images/plantplug.png> <span style="color: black;">Power Down,<br>Power Up!</span></div>
+                <div class="Number" style="--i:8;--clr:#ee498e;"> <img src = Images/ebook-01.png> <span >Plant a Tree <br> be a hero!</span></div>
+                <div class="Number" style="--i:9;--clr:#eed9de;"> <img src = Images/cart.png> <span style="color: black;">Go Local<br> Go Legendary</span></div>
+               
+
+        </div>
+
+        
+    
+    </div>
+    <div class="bottomitemContainer">
+        <div class="bitem" style="scale: 200%;  transform: translateY(-30px);"> <img src ="Images/globey.png"> </div> 
+        <div class="bitem" style="scale: 120%; transform: translateX(30px);"> <img  src ="Images/girl.png"> </div> 
+        <div class="bitem" style="scale: 160%; transform: translateY(-20px);"> <img  src ="Images/boy.png"> </div>
+    
+    </div>
+    <div class="pink-lineUpper"></div>
+    <div class="pink-lineUnder">INDIA's LARGEST ENERGY LITERACY MOVEMENT.</div>
+   <!-- <div class="buildingbg"><img  src ="Images/BG/buildingbg.png"> </div>-->
+</body>
+<script>
+       
+let Wheel = document.querySelector('.Wheel');
+let spinBtn = document.querySelector('.spinBtn');
+//let value =  Math.ceil(Math.random () * 3600);
+let value =  Math.ceil(Math.random () * 3600);
+Wheel.style.transform = "rotate(" + 20 + "deg)"
+spinBtn.onclick =  function() {
+    console.log("Wheel Rot"+getCurrentRotation(document.querySelector(".Wheel")));
+    
+    Wheel.style.transform = "rotate(" + value + "deg)"
+    value += Math.ceil(Math.random () * 3660);
+    setTimeout(function() {
+        var rotationval =getCurrentRotation(document.querySelector(".Wheel"));
+        console.log("Wheel Rot"+rotationval);
+
+        if( rotationval>0 && rotationval<=23){
+            console.log("PlantTree");
+            window.location.replace("https://webappsprd.tatapower.com/content/video/links/vindex325.html");
+        }
+        if(rotationval>23 && rotationval<=65){
+            console.log("HexPression");
+            window.location.replace("https://webappsprd.tatapower.com/content/video/links/vindex325.html");
+        }   
+
+        if(rotationval>65 && rotationval<=105){
+            console.log("Priti Intl");
+            window.location.replace("https://webappsprd.tatapower.com/content/video/links/vindex325.html");
+        }
+
+        if(rotationval>105 && rotationval<=140){
+            console.log("plastic for Padhai");
+            window.location.replace("https://webappsprd.tatapower.com/content/video/links/vindex325.html");
+        }
+
+        if(rotationval>140 && rotationval<=185){
+            console.log("VayuJal");
+            window.location.replace("https://webappsprd.tatapower.com/content/video/links/vindex325.html");
+        }
+        if(rotationval>185 && rotationval<=225){
+            console.log("Eco Friendly Couple");
+            window.location.replace("https://webappsprd.tatapower.com/content/video/links/vindex325.html");
+        }
+        if(rotationval>225 && rotationval<=260){
+            console.log("BioFuel");
+            window.location.replace("https://webappsprd.tatapower.com/content/video/links/vindex325.html");
+        }
+        if(rotationval>260 && rotationval<=304){
+            console.log("Organic Eating");
+            window.location.replace("https://webappsprd.tatapower.com/content/video/links/vindex325.html");
+        }
+        if(rotationval>304 && rotationval<=345){
+            console.log("Tejas Sidhna");
+            window.location.replace("https://webappsprd.tatapower.com/content/video/links/vindex325.html");
+        }
+        if(rotationval>345 && rotationval<=360){
+            console.log("Plant a Tree");
+            window.location.replace("https://webappsprd.tatapower.com/content/video/links/vindex325.html");
+        }
+  //your code to be executed after 1 second
+}, 6000);
+    
+
+}
+
+ function getRotationValue(){
+    console.log("Wheel Rot"+getCurrentRotation(document.querySelector(".Wheel")));
+ }
+
+function getCurrentRotation(el){
+  var st = window.getComputedStyle(el, null);
+  var tm = st.getPropertyValue("-webkit-transform") ||
+           st.getPropertyValue("-moz-transform") ||
+           st.getPropertyValue("-ms-transform") ||
+           st.getPropertyValue("-o-transform") ||
+           st.getPropertyValue("transform") ||
+           "none";
+  if (tm != "none") {
+    var values = tm.split('(')[1].split(')')[0].split(',');
+    /*
+    a = values[0];
+    b = values[1];
+    angle = Math.round(Math.atan2(b,a) * (180/Math.PI));
+    */
+    //return Math.round(Math.atan2(values[1],values[0]) * (180/Math.PI)); //this would return negative values the OP doesn't wants so it got commented and the next lines of code added
+    var angle = Math.round(Math.atan2(values[1],values[0]) * (180/Math.PI));
+    return (angle < 0 ? angle + 360 : angle); //adding 360 degrees here when angle < 0 is equivalent to adding (2 * Math.PI) radians before
+  }
+  return 0;
+}
+
+
+
+
+    </script>
+
+
+</body>
+</html>
