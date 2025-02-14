@@ -169,12 +169,13 @@
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .container {
     position: absolute;
-    width: min(30vw, 500px); /* Shrinks based on screen width, max 500px */
-    height: min(30vw, 500px);
+    width: min(25vw, 500px); /* Shrinks based on screen width, max 500px */
+    height: min(25vw, 500px);
     top: 27%;
     left: 50%;
     transform: translateX(-50%);
@@ -185,17 +186,12 @@
 }
 
 
-@media (min-width: 2500px) {
-    .container {
-        width: min(10vw, 200px); /* Shrinks further */
-        height: min(10vw, 200px);
-    }
-}
+
 
 @media (min-width: 1600px) {
     .container {
-        width: min(20vw, 400px); /* Shrinks further */
-        height: min(20vw, 400px);
+        width: min(20vw, 500px); /* Shrinks further */
+        height: min(20vw, 500px);
     }
 }
 
@@ -209,24 +205,24 @@
 /* Adjust size for tablets */
 @media (max-width: 1024px) {
     .container {
-        width: min(45vw, 450px);
-        height: min(45vw, 450px);
+        width: min(20vw, 450px);
+        height: min(20vw, 450px);
     }
 }
 
 /* Adjust size for mobile */
 @media (max-width: 768px) {
     .container {
-        width: min(55vw, 400px);
-        height: min(55vw, 400px);
+        width: min(45vw, 400px);
+        height: min(45vw, 400px);
     }
 }
 
 /* Adjust size for very small mobile screens */
 @media (max-width: 480px) {
     .container {
-        width: min(70vw, 350px);
-        height: min(70vw, 350px);
+        width: min(50vw, 350px);
+        height: min(50vw, 350px);
     }
 }
 
@@ -392,7 +388,7 @@
 
 .bottomitemContainer {
     position: absolute; /* Keeps it stuck to the bottom */
-    bottom:0;
+    bottom:-7%;
     
     width: 80%; /* Full width */
     display: flex;
@@ -426,7 +422,7 @@
 }
 
 .buildingbg{
-    position: absolute;
+    position: fixed;
     width: 100vw; /* Full width */
     margin: 0;
     border: none;
@@ -464,27 +460,28 @@
 .pink-lineUpper {
     position: absolute;
     width: 110vw; /* Full width */
-    height: 50px; /* Thickness */
+    height: 30px; /* Thickness */
     background-color: rgb(248, 127, 147); /* Line color */
     margin: 0;
     left: 0;
     border: none;
-    bottom: -6%;
+    bottom: -4.5%;
 }
 
 .pink-lineUnder {
     position: absolute;
     width: 110vw; /* Full width */
-    height: 50px; /* Thickness */
+    height: 30px; /* Thickness */
     background-color: rgb(255, 214, 221); /* Line color */
     color: rgb(255, 0, 85);
-    font-weight: 800;
-    font-size: 1.8em;
+    font-weight: 700;
+    font-size: 1.1em;
+  
     margin: 0;
     left: -5%;
    
     border: none;
-    bottom: -11%;
+    bottom: -8%;
     text-align: center;
     
 }
